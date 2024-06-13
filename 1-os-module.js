@@ -2,11 +2,13 @@
 // Include os module and create its object
 const os = require('os');
 
+
 const hostname = os.hostname();
-console.log("Name: " + hostname);
+console.log(`Nombre del equipo: ${hostname}`);
 
-const version = os.release();
-console.log("Free memory: " + version);
+const osVersion = os.version();
+console.log(`Edición/Versión del sistema operativo: ${osVersion}`);
 
-const totalMemory = os.totalmem();
-console.log("Total memory: " + totalMemory);
+// Obtener la memoria RAM total en GB
+const totalMemoryGB = os.totalmem() / (1024 ** 3);
+console.log(`Memoria RAM total: ${Math.ceil(totalMemoryGB)} GB`);
