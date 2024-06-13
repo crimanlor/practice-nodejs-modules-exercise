@@ -1,8 +1,13 @@
 /** Leer README */
 
-arr = [1, 2, 3];
-let sum = 0;
-for (let i = 0; i < arr.length; i++) {
-    sum += arr[i];
+const arr = [1, 2, 3];
+
+function getAvgFromArray(arr){
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+        total = sum / arr.length;
+    }
+    return total
 }
-console.log(sum);
+console.log(getAvgFromArray(arr))

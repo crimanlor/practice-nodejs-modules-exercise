@@ -12,4 +12,16 @@ function getRandomElementFromArray(arr) {
     return arr[randomIndex];
 }
 
+
+const arr = [1, 2, 3];
+function getAvgFromArray(arr){
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+        total = sum / arr.length;
+    }
+    return total
+}
+
 module.exports.getRandomElementFromArray = getRandomElementFromArray;
+module.exports.getAvgFromArray = getAvgFromArray;
